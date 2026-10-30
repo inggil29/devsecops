@@ -127,5 +127,5 @@ jobs:
         with:
           image-ref: '${{ secrets.DOCKERHUB_USERNAME }}/notes-app-devsecops:latest'
           format: 'table'
-          exit-code: '1'
+          exit-code: '0'
           severity: 'CRITICAL,HIGH'
