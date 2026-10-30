@@ -2,9 +2,9 @@ name: CI/CD DevSecOps Pipeline
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "sesi30-devsecops" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "sesi30-devsecops" ]
 
 jobs:
   unit-test:
