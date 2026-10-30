@@ -27,8 +27,9 @@ jobs:
           pip install -r dev-requirements.txt
 
       - name: Run Pytest
-        run: pytest
-
+        run: |
+          export PYTHONPATH=$PWD
+          pytest
   sast:
     name: SAST (Bandit)
     runs-on: ubuntu-latest
